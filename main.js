@@ -72,9 +72,12 @@ const reculer = function(){
 
 }
 
+//----- Boutons PLAY et PAUSE :
+
 //on crée une variable globale : playInterval afin qu'on puisse la réutiliser dans la fonctionnalité de mise en pause :
 let playInterval;
-//Evenement click sur bouton "play" :
+
+//Evenement click sur bouton "play" : On réutilise la fonction avancer().
 const play = document.querySelector("#play");
 play.addEventListener("click", function(){
     playInterval = setInterval(avancer, 2000);
